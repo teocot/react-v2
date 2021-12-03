@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import { Icon } from "@iconify/react";
+import Home from "./home/home";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Home name="Sara" />
+      </div>
+      <div>
+        <Icon icon="fa-solid:car" height="100px" width="100px" />
+        <Icon icon="fa-solid:home" height="100px" width="100px" />
+        <Icon icon="fa-solid:car" height="100px" width="100px" />
+      </div>
+      <div>
+        <Home name="Bena" />
+      </div>
     </div>
   );
 }
